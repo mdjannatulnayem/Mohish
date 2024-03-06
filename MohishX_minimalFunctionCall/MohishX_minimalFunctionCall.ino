@@ -51,7 +51,7 @@ void loop()
       digitalWrite(t3,LOW);
       digitalWrite(t4,HIGH);
     }
-    if(ch2 < -150 && mod(ch4) > 100 && ch4 < 0)
+    else if(ch2 < -150 && mod(ch4) > 100 && ch4 < 0)
     {
       // F_LEFT
       digitalWrite(t1,HIGH);
@@ -59,7 +59,7 @@ void loop()
       digitalWrite(t3,LOW);
       digitalWrite(t4,HIGH);
     }
-    if(ch2 < -150 && mod(ch4) > 100 && ch4 > 0)
+    else if(ch2 < -150 && mod(ch4) > 100 && ch4 > 0)
     {
       // F_RIGHT
       digitalWrite(t1,LOW);
@@ -67,7 +67,7 @@ void loop()
       digitalWrite(t3,HIGH);
       digitalWrite(t4,LOW);
     }
-    if(ch4 < -150 && mod(ch2) < 100)
+    else if(ch4 < -150 && mod(ch2) < 100)
     {
       // LEFT
       digitalWrite(t1,LOW);
@@ -75,7 +75,7 @@ void loop()
       digitalWrite(t3,LOW);
       digitalWrite(t4,HIGH);
     }
-    if(ch4 > 150 && mod(ch2) < 100)
+    else if(ch4 > 150 && mod(ch2) < 100)
     {
       // RIGHT
       digitalWrite(t1,LOW);
@@ -83,7 +83,7 @@ void loop()
       digitalWrite(t3,LOW);
       digitalWrite(t4,LOW);
     }   
-    if(ch2 > 150 && mod(ch4) < 100)
+    else if(ch2 > 150 && mod(ch4) < 100)
     {
       // BACKWARD
       digitalWrite(t1,HIGH);
@@ -91,7 +91,7 @@ void loop()
       digitalWrite(t3,HIGH);
       digitalWrite(t4,LOW);
     }
-    if(ch2 > 150 && mod(ch4) > 100 && ch4 < 0)
+    else if(ch2 > 150 && mod(ch4) > 100 && ch4 < 0)
     {
       // LEFT_B
       digitalWrite(t1,LOW);
@@ -99,7 +99,7 @@ void loop()
       digitalWrite(t3,HIGH);
       digitalWrite(t4,LOW);
     }
-    if(ch2 > 150 && mod(ch4) > 100 && ch4 > 0)
+    else if(ch2 > 150 && mod(ch4) > 100 && ch4 > 0)
     {
       // RIGHT_B
       digitalWrite(t1,HIGH);
@@ -107,7 +107,7 @@ void loop()
       digitalWrite(t3,LOW);
       digitalWrite(t4,LOW);
     }
-    if(mod(ch2) < 100 && mod(ch4) < 100)
+    else if(mod(ch2) < 100 && mod(ch4) < 100)
     {
       digitalWrite(t1,LOW);
       digitalWrite(t2,LOW);
@@ -125,7 +125,7 @@ void loop()
       digitalWrite(t3,HIGH);
       digitalWrite(t4,LOW);
     }
-    if(ch2 < -150 && mod(ch4) > 100 && ch4 < 0)
+    else if(ch2 < -150 && mod(ch4) > 100 && ch4 < 0)
     {
       // F_LEFT
       digitalWrite(t1,HIGH);
@@ -133,7 +133,7 @@ void loop()
       digitalWrite(t3,LOW);
       digitalWrite(t4,HIGH);
     }
-    if(ch2 < -150 && mod(ch4) > 100 && ch4 > 0)
+    else if(ch2 < -150 && mod(ch4) > 100 && ch4 > 0)
     {
       // F_RIGHT
       digitalWrite(t1,LOW);
@@ -141,7 +141,7 @@ void loop()
       digitalWrite(t3,HIGH);
       digitalWrite(t4,LOW);
     }
-    if(ch4 < -150 && mod(ch2) < 100)
+    else if(ch4 < -150 && mod(ch2) < 100)
     {
       // RIGHT_R
       digitalWrite(t1,HIGH);
@@ -149,7 +149,7 @@ void loop()
       digitalWrite(t3,LOW);
       digitalWrite(t4,LOW);
     }
-    if(ch4 > 150 && mod(ch2) < 100)
+    else if(ch4 > 150 && mod(ch2) < 100)
     {
       // LEFT_R
       digitalWrite(t1,LOW);
@@ -157,7 +157,7 @@ void loop()
       digitalWrite(t3,HIGH);
       digitalWrite(t4,LOW);
     }   
-    if(ch2 > 150 && mod(ch4) < 100)
+    else if(ch2 > 150 && mod(ch4) < 100)
     {
       // FORWARD
       digitalWrite(t1,LOW);
@@ -165,7 +165,7 @@ void loop()
       digitalWrite(t3,LOW);
       digitalWrite(t4,HIGH);
     }
-    if(ch2 > 150 && mod(ch4) > 100 && ch4 < 0)
+    else if(ch2 > 150 && mod(ch4) > 100 && ch4 < 0)
     {
       // RIGHT_B_R
       digitalWrite(t1,LOW);
@@ -173,7 +173,7 @@ void loop()
       digitalWrite(t3,LOW);
       digitalWrite(t4,LOW);
     }
-    if(ch2 > 150 && mod(ch4) > 100 && ch4 > 0)
+    else if(ch2 > 150 && mod(ch4) > 100 && ch4 > 0)
     {
       // LEFT_B_R  
       digitalWrite(t1,LOW);
@@ -181,7 +181,7 @@ void loop()
       digitalWrite(t3,LOW);
       digitalWrite(t4,HIGH);
     }
-    if(mod(ch2) < 100 && mod(ch4) < 100)
+    else if(mod(ch2) < 100 && mod(ch4) < 100)
     {
       digitalWrite(t1,LOW);
       digitalWrite(t2,LOW);
@@ -190,12 +190,12 @@ void loop()
     }
 
   }
-  // else {
-  //   digitalWrite(t1,LOW);
-  //   digitalWrite(t2,LOW);
-  //   digitalWrite(t3,LOW);
-  //   digitalWrite(t4,LOW);
-  // }
+  else {
+    digitalWrite(t1,LOW);
+    digitalWrite(t2,LOW);
+    digitalWrite(t3,LOW);
+    digitalWrite(t4,LOW);
+  }
 
 }
 

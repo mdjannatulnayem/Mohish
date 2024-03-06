@@ -150,35 +150,35 @@ void loop()
     {
       FORWARD();
     }
-    if(ch2 < -150 && mod(ch4) > 100 && ch4 < 0)
+    else if(ch2 < -150 && mod(ch4) > 100 && ch4 < 0)
     {
       F_LEFT();
     }
-    if(ch2 < -150 && mod(ch4) > 100 && ch4 > 0)
+    else if(ch2 < -150 && mod(ch4) > 100 && ch4 > 0)
     {
       F_RIGHT();
     }
-    if(ch4 < -150 && mod(ch2) < 100)
+    else if(ch4 < -150 && mod(ch2) < 100)
     {
       LEFT();
     }
-    if(ch4 > 150 && mod(ch2) < 100)
+    else if(ch4 > 150 && mod(ch2) < 100)
     {
       RIGHT();
     }   
-    if(ch2 > 150 && mod(ch4) < 100)
+    else if(ch2 > 150 && mod(ch4) < 100)
     {
       BACKWARD();
     }
-    if(ch2 > 150 && mod(ch4) > 100 && ch4 < 0)
+    else if(ch2 > 150 && mod(ch4) > 100 && ch4 < 0)
     {
       LEFT_B();
     }
-    if(ch2 > 150 && mod(ch4) > 100 && ch4 > 0)
+    else if(ch2 > 150 && mod(ch4) > 100 && ch4 > 0)
     {
       RIGHT_B();
     }
-    if(mod(ch2) < 100 && mod(ch4) < 100)
+    else if(mod(ch2) < 100 && mod(ch4) < 100)
     {
       NO_MOVE();
     }
@@ -189,43 +189,43 @@ void loop()
     {
       BACKWARD();
     }
-    if(ch2 < -150 && mod(ch4) > 100 && ch4 < 0)
+    else if(ch2 < -150 && mod(ch4) > 100 && ch4 < 0)
     {
       F_LEFT();
     }
-    if(ch2 < -150 && mod(ch4) > 100 && ch4 > 0)
+    else if(ch2 < -150 && mod(ch4) > 100 && ch4 > 0)
     {
       F_RIGHT();
     }
-    if(ch4 < -150 && mod(ch2) < 100)
+    else if(ch4 < -150 && mod(ch2) < 100)
     {
       RIGHT_R();
     }
-    if(ch4 > 150 && mod(ch2) < 100)
+    else if(ch4 > 150 && mod(ch2) < 100)
     {
       LEFT_R();
     }   
-    if(ch2 > 150 && mod(ch4) < 100)
+    else if(ch2 > 150 && mod(ch4) < 100)
     {
       FORWARD();
     }
-    if(ch2 > 150 && mod(ch4) > 100 && ch4 < 0)
+    else if(ch2 > 150 && mod(ch4) > 100 && ch4 < 0)
     {
       RIGHT_B_R(); 
     }
-    if(ch2 > 150 && mod(ch4) > 100 && ch4 > 0)
+    else if(ch2 > 150 && mod(ch4) > 100 && ch4 > 0)
     {
       LEFT_B_R();    
     }
-    if(mod(ch2) < 100 && mod(ch4) < 100)
+    else if(mod(ch2) < 100 && mod(ch4) < 100)
     {
       NO_MOVE();
     }
 
   }
-  // else {
-  //   NO_MOVE();
-  // }
+  else {
+    NO_MOVE();
+  }
 
 }
 
